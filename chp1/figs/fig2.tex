@@ -1,0 +1,20 @@
+\begin{figure}[bp!]
+  
+  \centering
+  \caption{An example of a bar graph}
+  \begin{tikzpicture}
+    \begin{axis}[
+      ybar,
+      enlarge x limits=0.3,
+      ylabel={Participants},
+      symbolic x coords={Male,Female},
+      xtick=data,
+      ymin=0,
+      width=4cm,
+      height=4.5cm,
+    ]
+    \addplot coordinates {(Male,13) (Female,10)};
+    \end{axis}
+  \end{tikzpicture}
+
+\end{figure}

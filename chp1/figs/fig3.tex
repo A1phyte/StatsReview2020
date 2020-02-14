@@ -1,0 +1,20 @@
+\begin{figure}[bp!]
+
+  \centering
+  \caption{An example of a relative frequency bar graph}
+  \begin{tikzpicture}
+    \begin{axis}[
+      ybar,
+      enlarge x limits=0.3,
+      ylabel={Percent of participants},
+      symbolic x coords={Male,Female},
+      xtick=data,
+      ymin=0,
+      width=4cm,
+      height=4.5cm,
+    ]
+    \addplot coordinates {(Male,56.52) (Female,43.48)};
+    \end{axis}
+  \end{tikzpicture}
+
+\end{figure}
