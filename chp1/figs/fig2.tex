@@ -4,14 +4,16 @@
   \caption{An example of a bar graph}
   \begin{tikzpicture}
     \begin{axis}[
+      title={Sex of respondents},
       ybar,
+      bar width=15pt,
       enlarge x limits=0.3,
-      ylabel={Participants},
+      ylabel={\# of Participants},
       symbolic x coords={Male,Female},
       xtick=data,
       ymin=0,
       width=4cm,
-      height=4.5cm,
+      height=4.3cm,
     ]
     \addplot coordinates {(Male,13) (Female,10)};
     \end{axis}

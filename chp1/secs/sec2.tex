@@ -46,7 +46,51 @@ of a pie chart grows in size. Polar area charts, which are similar to pie charts
 do not obey the area principle. You should also see that the sum of the relative frequencies
 equals 100\%, or 1.
 
+\subsubsection{Contingency Tables}
+Similar to the stacked bar graph, these tables are used to display information
+about two variables.
+\input{chp1/figs/fig6.tex}
+
+The \emph{marginal frequency} of a variable is the value in the margins: the rightmost column
+and the bottommost row. It can be described as $P(A)$ where $A$ is the value of the variable in
+the row or column the frequency is. 
+
+The \emph{conditional frequency} of two variables indicates the frequency
+of which a variable occurs given a known value of the other. For example,
+$P(Male|Hispanic)$ is $\frac{5}{9}$, which is the probability that a respondent
+is male given that they are Hispanic.
+
 \subsection{Displaying Quantitative Data}
 Displaying quantitative data is a bit different from displaying categorical data.
 Display methods are typically box-and-whisker plots, histograms, and stem plots.
+
+\subsubsection{Box and Whisker Plots}
+
+
+Box and Whisker plots are useful for determining these statistics:
+\input{chp1/figs/fig7.tex}
+\begin{itemize}
+  \item $M$/$Q_2$ (Median)
+  \item $Q_1$ (First quartile)
+  \item $Q_3$ (Third quartile)
+  \item $minX$ (Minimum)
+  \item $maxX$ (Maximum)
+  \item $IQR$ (Interquartile Range)
+  \item $R$ (Range)
+\end{itemize}
+And for determining any outliers. Outliers can be determined by individual data
+points that are not included in the whisker or box.
+\begin{mdframed}
+  \begin{definition}{\textbf{\underline{Outlier:}}}
+    As a general rule, outliers are data points that do not fall into the range
+    $[Q_1-1.5*IQR,\:Q_3+1.5*IQR]$.
+  \end{definition}
+\end{mdframed}
+
+\subsubsection{Histograms}
+Histograms are primarily useful in order to view a distribution's shape, and any
+gaps it might have.
+
+A histogram's primary difference from a bar graph is that it is used to display 
+quantitative data. This means that it has "bins", which are the bars, which touch each other.
 

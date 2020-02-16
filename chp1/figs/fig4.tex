@@ -4,15 +4,16 @@
   \caption{An example of a stacked bar graph}
   \begin{tikzpicture}
     \begin{axis}[
+      title={Sex of respondents},
       ybar stacked,
       bar width=15pt,
       enlarge x limits=0.3,
-      ylabel={Number of participants},
+      ylabel={\# of participants},
       symbolic x coords={Male,Female},
       xtick=data,
       ymin=0,
-      width=5cm,
-      height=5cm,
+      width=4cm,
+      height=4.3cm,
       legend style={at={(0.5,-0.20)},
       anchor=north,legend columns=-1},
     ]

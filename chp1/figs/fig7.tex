@@ -1,0 +1,36 @@
+\begin{wrapfigure}[2]{r}{0.55\textwidth}
+  \caption{An example box and whisker plot}
+  \begin{tikzpicture}
+    \begin{axis}
+      [
+        ytick={1,2},
+        yticklabels={1st period, 2nd period},
+        xmin=50,
+        xmax=100,
+        ymin=0, ymax=3,
+        title={AP Statistics Test Grades},
+        y=1cm,
+      ]
+      \addplot+[
+        boxplot prepared={
+          median=88,
+          upper quartile=92,
+          lower quartile=82,
+          upper whisker=95,
+          lower whisker=73,
+        },
+      ] coordinates {};
+
+      \addplot+[
+        boxplot prepared={
+          median=88,
+          upper quartile=90,
+          lower quartile=79,
+          upper whisker=98,
+          lower whisker=70
+        },
+      ] coordinates {(0, 55)};
+    \end{axis}
+    
+  \end{tikzpicture}
+\end{wrapfigure}
